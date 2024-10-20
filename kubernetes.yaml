@@ -30,11 +30,9 @@ spec:
     spec:
       containers:
       - name: hello-cloudbuild
-        image: us-central1-docker.pkg.dev/mystic-airway-439016-e2/my-repository/hello-cloudbuild:786b666
+        image: us-central1-docker.pkg.dev/mystic-airway-439016-e2/my-repository/hello-cloudbuild:c639e0c
         ports:
         - containerPort: 8080
-options:
-  logging: CLOUD_LOGGING_ONLY
 ---
 kind: Service
 apiVersion: v1
@@ -48,5 +46,3 @@ spec:
     port: 80
     targetPort: 8080
   type: LoadBalancer
-options:
-  logging: CLOUD_LOGGING_ONLY
