@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: hello-cloudbuild
-        image: us-central1-docker.pkg.dev/mystic-airway-439016-e2/my-repository/hello-cloudbuild:c64b3c3
+        image: us-central1-docker.pkg.dev/mystic-airway-439016-e2/my-repository/hello-cloudbuild:6d06e9b
         ports:
         - containerPort: 8080
 ---
